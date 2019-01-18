@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
-class MyException extends Exception {
+class MyException extends IOException {
     int linhaErro;
     MyException(int linhaErro) {
         this.linhaErro = linhaErro;
