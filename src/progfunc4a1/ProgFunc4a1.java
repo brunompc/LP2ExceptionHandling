@@ -46,8 +46,18 @@ public class ProgFunc4a1 {
     
     public static void main(String[] args) {
         
-        //iniciaJogo();
-        
+	// o visualizador trata desta parte :)
+
+        try {
+		iniciaJogo();
+	}
+	catch(MyException ex) {
+		System.out.println("Erro na linha " + ex.getLinhaErro());
+	}
+        catch(IOException ex) {
+		System.out.println("Erro ao ler o ficheiro");
+	}
+
     }
     
 }
